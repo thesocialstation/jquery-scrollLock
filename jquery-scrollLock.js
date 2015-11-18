@@ -57,12 +57,12 @@
               if (deltaForY > 0 && scrollTop + deltaY <= 0 || deltaForY < 0 && scrollTop + deltaY >= scrollHeight - clientHeight ||
                   deltaForX > 0 && scrollLeft + deltaX <= 0 || deltaForX < 0 && scrollLeft + deltaX >= scrollWidth - clientWidth) {
                 event.preventDefault();
-                //if (deltaY) {
-                $this.scrollTop(scrollTop + deltaY);
-                //}
-                //if (deltaX) {
-                $this.scrollLeft(scrollLeft + deltaX);
-                //}
+                if (deltaY) {
+                  $this.scrollTop(scrollTop + deltaY);
+                }
+                if (deltaX) {
+                  $this.scrollLeft(scrollLeft + deltaX);
+                }
               }
             }
           }
